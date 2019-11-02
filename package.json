@@ -4,7 +4,7 @@
   "private": true,
   "description": "Учебный проект «Угадай мелодию» от HTML Academy",
   "scripts": {
-    "eslint": "eslint src/**/*.js",
+    "eslint": "eslint src/**/*.tsx",
     "test": "npm run eslint",
     "build": "webpack --mode production",
     "start": "webpack-dev-server"
@@ -13,10 +13,24 @@
     "@babel/core": "7.6.4",
     "@babel/preset-env": "7.6.3",
     "@babel/preset-react": "7.6.3",
+    "@types/react": "16.9.9",
+    "@typescript-eslint/eslint-plugin": "2.5.0",
+    "@xcritical/eslint-plugin-xcritical": "^2.0.2",
     "babel-loader": "8.0.6",
     "eslint": "5.13.0",
+    "eslint-config-airbnb-typescript": "6.0.0",
     "eslint-config-htmlacademy": "^0.5.2",
+    "eslint-config-typescript": "^3.0.0",
+    "eslint-import-resolver-alias": "1.1.2",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jsx-a11y": "6.2.3",
     "eslint-plugin-react": "7.16.0",
+    "eslint-plugin-react-hooks": "2.2.0",
+    "ts-loader": "6.2.0",
+    "tsint": "1.0.1",
+    "tslint": "^5.20.0",
+    "tslint-config-airbnb": "^5.11.2",
+    "typescript": "3.6.4",
     "webpack": "4.41.2",
     "webpack-cli": "3.3.9",
     "webpack-dev-server": "3.8.2"
@@ -24,5 +38,9 @@
   "engines": {
     "node": "10"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@types/react-dom": "^16.9.3",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
+  }
 }
