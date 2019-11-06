@@ -8,7 +8,7 @@ const config = {
   maxErrors: 3,
 };
 
-const init = () => {
+const init = (): void => {
   ReactDOM.render(
     <App
       gameTime={ config.gameTime }
