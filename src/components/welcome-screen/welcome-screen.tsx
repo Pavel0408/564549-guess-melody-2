@@ -1,7 +1,8 @@
 import * as React from 'react';
+import { IWelcomeScreenProps } from '../../interfaces';
 
 
-export const WelcomeScreen = (props: {gameTime: number; maxErrors: number}): any => {
+export const WelcomeScreen = (props: IWelcomeScreenProps): JSX.Element => {
   const { gameTime, maxErrors } = props;
 
   return (
@@ -12,14 +13,14 @@ export const WelcomeScreen = (props: {gameTime: number; maxErrors: number}): any
       <p className="welcome__text">Правила просты:</p>
       <ul className="welcome__rules-list">
         <li>
-За&nbsp;
+          За&nbsp;
           { gameTime }
-&nbsp;минут нужно ответить на&nbsp;все вопросы.
+          &nbsp;минут нужно ответить на&nbsp;все вопросы.
         </li>
         <li>
-Можно допустить
+          Можно допустить
           { maxErrors }
-ошибки.
+          ошибки.
         </li>
       </ul>
       <p className="welcome__text">Удачи!</p>
