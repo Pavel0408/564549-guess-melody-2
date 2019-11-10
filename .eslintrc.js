@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['plugin:@xcritical/eslint-plugin-xcritical/typescript'],
+  extends: ['plugin:@xcritical/eslint-plugin-xcritical/typescript', "plugin:jest/recommended"],
   settings: {
     'import/resolver': {
       "node": {
